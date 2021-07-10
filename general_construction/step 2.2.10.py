@@ -20,7 +20,6 @@ def some_func(string):
 
 
 n = int(input())
-# print(i + 1 if some_func() else '' for i in range(n))
 for i in range(n):
     if some_func(input()):
         print(i + 1, end=' ')
