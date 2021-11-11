@@ -14,7 +14,7 @@ def read_matrix(n):
 
 def print_count_more_than_average(li):
     mean = sum(li) / len(li)
-    return sum([1 if el > mean else 0 for el in li])
+    return sum([el > mean for el in li])
 
 
 def print_result(matrix):
