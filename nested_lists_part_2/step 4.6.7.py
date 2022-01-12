@@ -2,7 +2,7 @@
 # и заполняет её числами от 1 до n⋅m в соответствии с образцом.
 
 def fill_matrix(length: int, width: int):
-    return [[(j + i + 1) % width if (j + i + 1) % width != 0 else width for j in range(width)] for i in range(length)]
+    return [[(j + i) % width + 1 for j in range(width)] for i in range(length)]
 
 
 def print_matrix(matrix):
