@@ -11,7 +11,6 @@ def print_dict(my_dict):
 n = int(input())
 names = [input() for _ in range(n)]
 names_santa = dict.fromkeys(names)
-print(names_santa)
 
 random.shuffle(names)
 for index, name in enumerate(names):
