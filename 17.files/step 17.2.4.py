@@ -6,7 +6,7 @@
 
 filename = 'numbers_1.txt'
 with open(filename, 'r', encoding='utf-8') as file:
-    data = map(lambda x: x.split(), file.read().split('\n'))
+    data = list(map(str.split, file))
 
 total = [sum(map(int, el)) for el in data if el]
 print(*total, sep='\n')
