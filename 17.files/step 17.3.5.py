@@ -27,4 +27,4 @@ colors = list(filter(lambda col: data.count(col)/len(data) > 0.07, colors))
 
 with open(filename_output, 'w', encoding='utf-8') as f:
     for el in colors:
-        print(f'{el} goat', file=f)
+        print(f'{el} goat', file=f, end='')
