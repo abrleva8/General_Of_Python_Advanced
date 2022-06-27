@@ -23,8 +23,8 @@ alphabet = {'а': 'a', 'б': 'b', 'в': 'v', 'г': 'g', 'д': 'd', 'е': 'e', '�
             'Ц': 'C', 'Ч': 'Ch', 'Ш': 'Sh', 'Щ': 'Shh', 'Ы': 'Y', 'Э': 'Je', 'Ю': 'Ju',
             'Я': 'Ya'}
 
-for key in alphabet:
-    data = data.replace(key, alphabet[key])
+for key, value in alphabet.items():
+    data = data.replace(key, value)
 
 with open(filename_output, 'w', encoding='utf-8') as file_output:
     print(data, file=file_output)
